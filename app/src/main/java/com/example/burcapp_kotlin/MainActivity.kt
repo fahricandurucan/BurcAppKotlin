@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //adapter: veri kaynağından aldığı bilgiyi view a dönüştüren yapıdır.
-        var arrayAdapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,horoscope) //burçları sırasıyla textview a koyacak
+        //var arrayAdapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,horoscope) //burçları sırasıyla textview a koyacak
+        var arrayAdapter = ArrayAdapter<String>(this,R.layout.horoscope_line,R.id.horoscopeName,horoscope)
 
         horoscopeList.adapter = arrayAdapter
 

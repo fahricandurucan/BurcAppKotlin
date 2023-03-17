@@ -13,9 +13,12 @@ class MainActivity : AppCompatActivity() {
 
         var horoscope = resources.getStringArray(R.array.horoscope)
         var date = resources.getStringArray(R.array.date)
+        var image = arrayOf(R.drawable.koc1,R.drawable.boga2,R.drawable.ikizler3,R.drawable.yengec4,
+            R.drawable.aslan5,R.drawable.basak6,R.drawable.terazi7,R.drawable.akrep8,R.drawable.yay9,
+            R.drawable.oglak10,R.drawable.kova11,R.drawable.balik12)
 
 //        var adapter = ArrayAdapter<String>(this, R.layout.horoscope_line,R.id.tvHoroscope,horoscope)
-        var myAdapter = HoroscopeArrayAdapter(this,R.layout.horoscope_line,R.id.tvHoroscope,horoscope,date)
+        var myAdapter = HoroscopeArrayAdapter(this,R.layout.horoscope_line,R.id.tvHoroscope,horoscope,date,image)
         horoscopeList.adapter = myAdapter
 
         //adapter: veri kaynağından aldığı bilgiyi view a dönüştüren yapıdır.
